@@ -96,7 +96,6 @@ void delete_interpolation(struct Point *interp)
 	free(interp);
 }
 
-/*
 void linear_interpolation(struct Line line, int npts)
 {
 	int i;
@@ -125,7 +124,6 @@ void linear_interpolation(struct Line line, int npts)
 		}
 	}
 }
-*/
 
 #if 0
 void print_ctrl_points(struct Point **P, int len)
@@ -159,7 +157,6 @@ void print_nurbs_curve(struct Point **P, int degree, int num_pt)
 }
 
 void find_knot(char *choice, double *u, struct Point **P, int num_pt)
-// I wish arrays in C were first class objects, at least memory is
 {
 	int i;
 	double el[num_pt];
