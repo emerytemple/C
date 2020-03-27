@@ -1,8 +1,8 @@
 OBJECTS = main.o geometry.o grid.o cfd.o mymath.o
 CFLAGS = -lm -Wall
 
-bike: $(OBJECTS)
-	cc -o bike $(OBJECTS) $(CFLAGS)
+main: $(OBJECTS)
+	cc -o main $(OBJECTS) $(CFLAGS)
 
 geometry.o:
 	cc -c geometry.c
@@ -15,4 +15,4 @@ mymath.o:
 
 .PHONY: clean
 clean:
-	-rm bike $(OBJECTS)
+	-rm main $(OBJECTS)
